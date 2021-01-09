@@ -6,10 +6,11 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
     width: 400px;
-    height: 30px;
-    padding: 0 0 0 5px;
+    height: 40px;
+    padding: 10px 0 10px 5px;
     font-size: 18px;
     font-weight: 700;
+    color: git#0f2106;
     background-color: #C9CACC;
     border-radius: 5px;
 

@@ -6,29 +6,34 @@ import {CharactersList, Search} from '../components';
 export function Characters() {
 
     const [person, setPerson] = useState([]);
-    
+    const [searchText, setSearchText] = useState('');
+     
 
     useEffect(() => {
-        let cleanupFunction = false;
+         let cleanupFunction = false;
 
         const getPerson = async () => {
             const response = await fetch('https://www.breakingbadapi.com/api/characters');
           
             const result = await response.json();
-            if(!cleanupFunction) setPerson(result);
+            if(!cleanupFunction) setPerson(result);    
         }
 
-        getPerson()
 
-        return() => cleanupFunction = true;
-    }, [])
+        const searchPeraon = () => {
+            setPerson(person.filter(item => item.name.toLowerCase().includes(searchText)))
+        }
+        
+        
+        searchText !== '' ? searchPeraon() : getPerson()
 
+    }, [searchText])
 
     return(
         <Main>
-            <Search/>
+            <Search searchText={searchText} setSearchText={setSearchText}/>
             <Inner>
-                <CharactersList person={person} />
+                <CharactersList person={person}/>
             </Inner>
         </Main>
        

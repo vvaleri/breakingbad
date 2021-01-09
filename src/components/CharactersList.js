@@ -8,7 +8,6 @@ export function CharactersList({person}) {
         
         <ListContainer>
             {
-                // person.filter(item => item.char_id < 58 && item.char_id !== 39)
                 person.map(item => item.char_id < 58 && item.char_id !== 39
                     ? <CharactersItem key={item.char_id} item={item} />
                     : null)
