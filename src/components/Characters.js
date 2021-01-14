@@ -9,25 +9,25 @@ export function Characters() {
     const [searchText, setSearchText] = useState('');
      
 
-    useEffect(() => {
-         let cleanupFunction = false;
+    // useEffect(() => {
+    //      let cleanupFunction = false;
 
-        const getPerson = async () => {
-            const response = await fetch('https://www.breakingbadapi.com/api/characters');
+    //     const getPerson = async () => {
+    //         const response = await fetch('https://www.breakingbadapi.com/api/characters');
           
-            const result = await response.json();
-            if(!cleanupFunction) setPerson(result);    
-        }
+    //         const result = await response.json();
+    //         if(!cleanupFunction) setPerson(result);    
+    //     }
 
 
-        const searchPeraon = () => {
-            setPerson(person.filter(item => item.name.toLowerCase().includes(searchText)))
-        }
+    //     const searchPeraon = () => {
+    //         setPerson(person.filter(item => item.name.toLowerCase().includes(searchText)))
+    //     }
         
         
-        searchText !== '' ? searchPeraon() : getPerson()
+    //     searchText !== '' ? searchPeraon() : getPerson()
 
-    }, [searchText])
+    // }, [searchText])
 
     return(
         <Main>

@@ -1,5 +1,6 @@
 import React from 'react';
-import QuotesData from '../quotes.json'
+import QuotesData from '../quotes.json';
+import {ItemInner, QuotesText, QuotesBox, QuotesButton} from './styles/QuotesItem.style';
 
 export function QuotesItem({quote, setQuote}) {
 
@@ -8,23 +9,21 @@ export function QuotesItem({quote, setQuote}) {
         console.log(randomQuote)
         setQuote(QuotesData[randomQuote])
     }
-    // getQuote()
-    const style = {
-        margin: "150px 0 0 0"
-    }
-
+    //  getQuote()
+   
     return(
-        <div>
+        <ItemInner>
             
-            {     
-                <div>
-                    <p>{quote.text}</p>
-                    <p>{quote.author}</p>
-                </div>
+            <QuotesText>
+                <p>"{quote.text}"</p>
+                <p>{quote.author}</p>
+            </QuotesText>
                         
-            }
+            <QuotesBox>
+                <QuotesButton onClick={getQuote}>get quote</QuotesButton>
+            </QuotesBox>
             
-            <button style={style} onClick={getQuote}>get quote</button>
-        </div>
+            
+        </ItemInner>
     )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {QuotesItem} from '../components';
+import {QuotesContainer} from './styles/Quotes.style'
 
 
 export function Quotes() {
@@ -7,8 +8,8 @@ export function Quotes() {
     const [quote, setQuote] = useState('');
 
     return(
-        <div>
+        <QuotesContainer>
             <QuotesItem quote={quote} setQuote={setQuote}/>
-        </div>
+        </QuotesContainer>
     )
 }
