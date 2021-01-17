@@ -6,6 +6,11 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Hind Siliguri Regular';
         src: local('Hind Siliguri Regular'), url('./fonts/Hind Siliguri Regular.woff'), format('woff')
     }
+
+    @font-face{
+        font-family: 'Play Regular';
+        src: local('Play Regular'), url('./fonts/Play Regular.woff'), format('woff')
+    }
     
     * {
         padding: 0;
