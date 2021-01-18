@@ -1,10 +1,11 @@
 import React from 'react';
 import {ListContainer} from './styles/CharactersList.style';
-import {CharactersItem} from '../components';
+import {CharactersItem, Loader} from '../components';
 
-export function CharactersList({person}) {
+export function CharactersList({person, loading}) {
 
-    return(
+    return loading ? (<Loader/>) 
+        : (
         
         <ListContainer>
             {
@@ -14,7 +15,5 @@ export function CharactersList({person}) {
                     
             }
         </ListContainer>
-        
-   
     )
 }

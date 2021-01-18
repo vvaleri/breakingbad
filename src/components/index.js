@@ -5,6 +5,7 @@ import {Home} from './Home';
 import {CharactersList} from './CharactersList';
 import {CharactersItem} from './CharactersItem';
 import {Search} from './Search';
+import {Loader} from './Loader';
 
 
 
@@ -14,4 +15,5 @@ export {Menu,
         Home,
         CharactersList,
         CharactersItem,
-        Search}
+        Search,
+        Loader}

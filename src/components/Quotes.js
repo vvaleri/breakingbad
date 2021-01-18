@@ -20,7 +20,6 @@ export function Quotes() {
     return(
         <QuotesContainer>
             <ItemInner>
-                
                 <QuotesText>
                     <p>&#8220;{quote.text}&#8221;</p>
                     <p>{quote.author}</p>
@@ -29,8 +28,6 @@ export function Quotes() {
                 <QuotesBox>
                     <QuotesButton onClick={getQuote}>next</QuotesButton>
                 </QuotesBox>
-                
-                
             </ItemInner>
         </QuotesContainer>
     )

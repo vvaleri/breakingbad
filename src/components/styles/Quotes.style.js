@@ -21,8 +21,6 @@ const QuotesText = styled.div`
     font-size: 20px;
     font-weight: 700;
     font-family: 'Play Regular', sans-serif;
-   
-    
 
     p {
         &:first-child {
