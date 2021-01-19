@@ -15,7 +15,7 @@ export function Menu() {
             <MenuItems>
                 {menuItems.map(item => 
                     <Item key={item.name}>
-                        <NavLink to={item.to}>{item.name}</NavLink>
+                        <NavLink exact to={item.to}>{item.name}</NavLink>
                     </Item>)}
             </MenuItems>
         </nav>

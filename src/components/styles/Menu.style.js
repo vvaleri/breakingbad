@@ -14,8 +14,21 @@ const Item = styled.li`
     margin: 0 20px 0 0;
     list-style: none;
     font-size: 20px;
+
+    @media(max-width: 425px) {
+        font-size: 16px;
+    }
+
     :last-child {
         margin: 0;
+    }
+
+    a {
+        
+        &.active {
+            color: #BFA82B;
+            
+        }
     }
 
 `

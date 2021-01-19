@@ -4,6 +4,10 @@ const ItemContainer = styled.div`
 position: relative;
 transition: 0.5s;
 
+@media(max-width: 425px) {
+    padding: 0 20px;
+}
+
 img {
      object-fit: cover;
      width: 100%;
@@ -53,15 +57,20 @@ const ItemButton = styled.button`
     background-color: rgba(255, 255, 255, 0);
     appearance: none;
     outline-color: #1E552E;
+    transition: 0.4s;
 
     &.active {
         background-color: #fff;
+        transition: 0.4s;
     }
 
     /* img {
         animation: ${flying} 4s infinite;
     } */
     
+    @media(max-width: 425px) {
+        left: 20px;
+    }
     
 `
 
@@ -77,20 +86,10 @@ const ItemContent = styled.div`
     align-items: center;
     background-color: #1a1a1a;
     z-index: 8;
-    /* opacity: 0;
-    visibility: hidden;
-
-
-    &.active {
-      
-        opacity: 1;
-        visibility: visible;
-    } */
-
+    
     hr {
         width: 200px;
         margin: 0 0 20px 0;
-       
     }
 
 `
@@ -99,12 +98,28 @@ const ItemTitle = styled.p`
     margin: 0 0 10px 0;
     font-size: 22px;
     letter-spacing: 1.5px;
-    font-weight: bold;
+    font-weight: 700;
+    text-align: center;
 `
 
 const ItemText = styled.div`
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
+    line-height: 23px;
+
+    p {
+        margin: 0 0 10px 0;
+
+        :last-child {
+            margin: 0;
+        }
+    }
+
+    span {
+        font-weight: 700;
+        color: #C9CACC;
+    }
 `
    
   

@@ -23,13 +23,13 @@ const QuotesText = styled.div`
     font-family: 'Play Regular', sans-serif;
 
     p {
-        &:first-child {
+        :first-child {
             margin: 0 0 20px 0;
             text-align: center;
             line-height: 35px;
         }
 
-        &:last-child {
+        :last-child {
             display: flex;
             justify-content: flex-end;
         }
@@ -39,7 +39,7 @@ const QuotesText = styled.div`
         font-size: 16px;
 
         p {
-            &:first-child {
+            :first-child {
                 line-height: 25px;
             }
         }
@@ -65,7 +65,7 @@ const QuotesButton = styled.button`
     transition: 0.7s;
     cursor: pointer;
 
-    &:focus {
+    :focus {
         outline: none;
         box-shadow: 0px 0px 18px 7px rgba(255, 255, 255, 0.9);
         transition: 0.7s;
