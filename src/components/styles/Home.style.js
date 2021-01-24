@@ -2,6 +2,9 @@ import styled from 'styled-components/macro'
 
 
 const MainImg = styled.div`
+position: absolute;
+/* top:0; */
+
     display: flex;
     justify-content: center; 
 

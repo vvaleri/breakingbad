@@ -73,7 +73,14 @@ const ItemButton = styled.button`
     }
     
 `
-
+const fade = keyframes`
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+`
 const ItemContent = styled.div`
     position: absolute;
     width: 100%;
@@ -86,7 +93,9 @@ const ItemContent = styled.div`
     align-items: center;
     background-color: #1a1a1a;
     z-index: 8;
-    
+    transition: 1s all ease-in-out;
+    animation: ${fade} 1s;
+
     hr {
         width: 200px;
         margin: 0 0 20px 0;
