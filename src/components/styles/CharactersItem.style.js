@@ -64,9 +64,9 @@ const ItemButton = styled.button`
         transition: 0.4s;
     }
 
-    /* img {
+    img {
         animation: ${flying} 4s infinite;
-    } */
+    }
     
     @media(max-width: 425px) {
         left: 20px;
@@ -130,7 +130,6 @@ const ItemText = styled.div`
         color: #C9CACC;
     }
 `
-   
-  
+
 
 export {ItemContainer, ItemButton, ItemContent, ItemTitle, ItemText}

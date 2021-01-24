@@ -9,10 +9,8 @@ const QuotesContainer = styled.div`
 
 const ItemInner = styled.div`
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 `
-
 
 const QuotesText = styled.div`
     margin: 0 0 50px 0;
@@ -50,7 +48,6 @@ const QuotesText = styled.div`
 const QuotesBox = styled.div`
     display: flex;
     justify-content: center;
-    
     
 `
 

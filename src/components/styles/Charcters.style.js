@@ -5,7 +5,6 @@ const Main = styled.main`
     flex-direction: column;
     align-items: center;
     padding: 20px 15px 0;
-   
 `
 
 const Inner = styled.div`

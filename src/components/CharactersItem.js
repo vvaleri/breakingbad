@@ -4,7 +4,6 @@ import {ItemContainer, ItemButton, ItemContent, ItemTitle, ItemText} from './sty
 
 export function CharactersItem({item}) {
 
-
      const [toggleActive, setToggleActive] = useState(false);
      const itemRef = useRef();
 
