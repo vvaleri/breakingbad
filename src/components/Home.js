@@ -7,10 +7,10 @@ export function Home() {
     return (
         <MainSection>
             <MainImg>
-                <img src="/img/logo.svg" alt="logo breaking bad"/>
+                <img src={process.env.PUBLIC_URL + "/img/logo.svg"} alt="logo breaking bad"/>
             </MainImg>
             <SmokeElement
-                smokeSrc="/img/smoke.png"
+                smokeSrc={process.env.PUBLIC_URL + "/img/smoke.png"}
                 smokeOpacity="0.4"
             />
         </MainSection>

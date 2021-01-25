@@ -29,7 +29,7 @@ export function CharactersItem({item}) {
        
           <img src={item.img} alt={item.portrayed}/>
             
-          <ItemButton onClick={isToggle} className={toggleActive ? 'active' : ''}><img src="/img/fly.svg" alt="icon green fly"/></ItemButton>
+          <ItemButton onClick={isToggle} className={toggleActive ? 'active' : ''}><img src={process.env.PUBLIC_URL + "/img/fly.svg"} alt="icon green fly"/></ItemButton>
 
           {toggleActive &&
                <ItemContent>

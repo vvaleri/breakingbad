@@ -6,7 +6,7 @@ export function Loader () {
 
     return(
         <LoaderImage>
-            <img src="/img/breaking.png" alt="Heisenberg"/>
+            <img src={process.env.PUBLIC_URL + "/img/breaking.png"} alt="Heisenberg"/>
         </LoaderImage>
     )
 }
