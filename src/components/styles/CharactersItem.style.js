@@ -4,9 +4,7 @@ const ItemContainer = styled.div`
 position: relative;
 transition: 0.5s;
 
-@media(max-width: 425px) {
-    padding: 0 20px;
-}
+
 
 img {
      object-fit: cover;
@@ -56,8 +54,18 @@ const ItemButton = styled.button`
     z-index: 10;
     background-color: rgba(255, 255, 255, 0);
     appearance: none;
+    border: 1px dashed #000000;
+    border-radius: 0 10px 10px 10px;
     outline-color: #1E552E;
     transition: 0.4s;
+    cursor: pointer;
+
+    @media(min-width: 768px) {
+        :hover {
+            background-color: #fff;
+            transition: 0.4s;
+        }
+    }
 
     &.active {
         background-color: #fff;
@@ -66,10 +74,6 @@ const ItemButton = styled.button`
 
     img {
         animation: ${flying} 4s infinite;
-    }
-    
-    @media(max-width: 425px) {
-        left: 20px;
     }
     
 `

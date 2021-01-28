@@ -65,9 +65,15 @@ const QuotesButton = styled.button`
     :focus {
         outline: none;
         box-shadow: 0px 0px 18px 7px rgba(255, 255, 255, 0.9);
-        transition: 0.7s;
-        
+        transition: 0.7s
     }
+
+    @media(min-width: 768px) {
+        :hover {
+            box-shadow: 0px 0px 18px 7px rgba(255, 255, 255, 0.9);
+            transition: 0.4s;
+        }
+    } 
 `
 
 export {QuotesContainer, ItemInner, QuotesText, QuotesBox, QuotesButton}
