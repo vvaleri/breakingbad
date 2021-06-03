@@ -25,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         background: linear-gradient(to right,  #031805,  #0A1E08);
         font-family: 'Hind Siliguri Regular', sans-serif;
+        overflow-x: hidden;
     }
 
     a {

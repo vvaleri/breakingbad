@@ -14,6 +14,7 @@ const Input = styled.input`
     background-color: #3a3939;
     box-shadow: 0px 0px 18px 7px rgba(235, 235, 236, 0.1);
     border-radius: 5px;
+    border: none;
     transition: 0.3s;
 
     @media(max-width: 425px) {
@@ -21,9 +22,9 @@ const Input = styled.input`
     }
 
     :focus {
-        background-color: #ffffff;
+        background-color: #d4d4d4;
         outline: none;
-        box-shadow: 0px 0px 18px 7px rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 0px 18px 7px rgba(255, 255, 255, 0.3);
         transition: 0.3s;
     }
 `

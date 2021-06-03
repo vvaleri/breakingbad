@@ -59,21 +59,21 @@ const QuotesButton = styled.button`
     border-radius: 15px;
     border: 1px solid #0a0a0a;
     box-shadow: 0px 0px 18px 7px rgba(235, 235, 236, 0.2);
-    transition: 0.7s;
+    transition: 0.3s;
+    outline: none;
     cursor: pointer;
 
-    :focus {
-        outline: none;
-        box-shadow: 0px 0px 18px 7px rgba(255, 255, 255, 0.9);
-        transition: 0.7s
+    @media (hover: hover), screen and (min-width: 0\0) {
+        :focus,
+        :hover {
+            box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.4);
+        }
     }
 
-    @media(min-width: 768px) {
-        :hover {
-            box-shadow: 0px 0px 18px 7px rgba(255, 255, 255, 0.9);
-            transition: 0.4s;
-        }
-    } 
+    :active {
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.4);
+    }
+
 `
 
 export {QuotesContainer, ItemInner, QuotesText, QuotesBox, QuotesButton}

@@ -24,22 +24,13 @@ const Item = styled.li`
     }
 
     a {
-        border-radius: 15px;
-        transition: 0.3s;
+        transition: color 0.3s;
+        outline: none;
 
-        @media(min-width: 768px) {
-            :hover {
-                box-shadow: 1px 8px 8px 0px rgba(191, 168, 43, 0.7);
-                transition: 0.4s;
-            }
-        } 
-
-        :focus {
-            outline: none;
-            box-shadow: 1px 8px 8px 0px rgba(191, 168, 43, 0.7);
-
-            @media(max-width: 425px) {
-                box-shadow: none;
+        @media (hover: hover), screen and (min-width: 0\0) {
+            :hover,
+            :focus {
+                color: #BFA82B;
             }
         }
 

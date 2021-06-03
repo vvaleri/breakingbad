@@ -1,27 +1,19 @@
 import styled, {keyframes} from 'styled-components/macro';
 
 const ItemContainer = styled.div`
-position: relative;
-transition: 0.5s;
+    position: relative;
+    transition: box-shadow 0.5s;
 
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 
-
-img {
-     object-fit: cover;
-     width: 100%;
-     height: 100%;
- }
-
- :hover,
- &.active {
-     box-shadow: 0px 3px 8px 10px rgba(46, 160, 67, 0.28);
-     transition: 0.4s;
- }
-
- &.active {
-    box-shadow: 0px 3px 8px 10px rgba(46, 160, 67, 0.28);
-    transition: 0.4s;
- }
+    &.active,
+    :hover {
+        box-shadow: 0px 3px 8px 10px rgba(46, 160, 67, 0.28);
+    }
 `
 
 
@@ -57,19 +49,24 @@ const ItemButton = styled.button`
     border: 1px dashed #000000;
     border-radius: 0 10px 10px 10px;
     outline-color: #1E552E;
-    transition: 0.4s;
+    transition: background-color 0.4s;
     cursor: pointer;
 
-    @media(min-width: 768px) {
-        :hover {
-            background-color: #fff;
-            transition: 0.4s;
-        }
+    :hover {
+        img {
+            animation: none;
+            opacity: 0;
+        }  
     }
+    
 
     &.active {
         background-color: #fff;
-        transition: 0.4s;
+
+        img {
+            animation: none;
+            opacity: 0;
+        }
     }
 
     img {
