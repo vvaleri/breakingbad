@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/breakingbad/static/js/main.a3476b66.chunk.js",
-    "main.js.map": "/breakingbad/static/js/main.a3476b66.chunk.js.map",
+    "main.js": "/breakingbad/static/js/main.9fdfcaf4.chunk.js",
+    "main.js.map": "/breakingbad/static/js/main.9fdfcaf4.chunk.js.map",
     "runtime-main.js": "/breakingbad/static/js/runtime-main.929b2564.js",
     "runtime-main.js.map": "/breakingbad/static/js/runtime-main.929b2564.js.map",
     "static/css/2.679831fc.chunk.css": "/breakingbad/static/css/2.679831fc.chunk.css",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.929b2564.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.1d1fd330.chunk.js",
-    "static/js/main.a3476b66.chunk.js"
+    "static/js/main.9fdfcaf4.chunk.js"
   ]
 }
